@@ -1,5 +1,5 @@
 name             'appveyor'
-maintainer       'Brafton'
+maintainer       'Brafton Inc.'
 maintainer_email 'jamestoyer@toyertechnologies.com'
 license          'All rights reserved'
 description      'Installs/Configures appveyor and it\'s agent'

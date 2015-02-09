@@ -1,7 +1,7 @@
 #
 # Cookbook Name:: appveyor
 #
-# Copyright 2014, Brafton
+# Copyright 2014-2015, Brafton Inc.
 #
 # All rights reserved - Do Not Redistribute
 #

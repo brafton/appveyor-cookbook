@@ -9,12 +9,11 @@
 
 include_recipe "windows"
 
-if not File.exists?(node['appveyor']['agent']['location'])
-	windows_package 'AppveyorDeploymentAgent' do
-		source node['appveyor']['agent']['source']
-		installer_type :msi
-		options "/quiet /qn /norestart /log install.log ENVIRONMENT_ACCESS_KEY=#{node['appveyor']['agent']['access_key']}"
-	end
+windows_package 'AppveyorDeploymentAgent' do
+	source node['appveyor']['agent']['source']
+	installer_type :msi
+	options "/quiet /qn /norestart /log install.log ENVIRONMENT_ACCESS_KEY=#{node['appveyor']['agent']['access_key']}"
+	not_if File.exists?(node['appveyor']['agent']['location'])
 end
 
 unless node['appveyor']['agent']['deployment_group'].nil?
@@ -29,5 +28,5 @@ unless node['appveyor']['agent']['deployment_group'].nil?
 
 	service 'Appveyor.DeploymentAgent' do
 		action :restart
-	end	
+	end
 end
