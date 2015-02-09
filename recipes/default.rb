@@ -2,7 +2,7 @@
 # Cookbook Name:: appveyor
 # Recipe:: default
 #
-# Copyright 2014, Brafton
+# Copyright (C) 2015 Brafton Inc.
 #
 # All rights reserved - Do Not Redistribute
 #
