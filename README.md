@@ -4,7 +4,7 @@ This cookbook installs and configures AppVeyor and it's agent on a node.
 
 Requirements
 ------------
-Version 0.3.0+ of this cookbook requires Chef 11.4.4+.
+Version 0.4.0+ of this cookbook requires Chef 11.4.4+.
 
 #### Platforms
 
@@ -60,13 +60,16 @@ Usage
     "name":"my_node",
     "run_list": [
       "recipe[appveyor]"
-    ]
+    ],
+    "appveyor": {
+      "agent": {
+        "access_key": "Some access key",
+        "deployment_group": "Group 1"
+      }
+    }
   }
-  ```
-2. Change the `node['appveyor']['agent']['access_key']` attribute the environment access key
 
 License and Authors
 -------------------
-Authors: 
 
-- [James Toyer](mailto://jamestoyer@toyertechnologies.com)
+Author:: James Toyer. (<jamestoyer@toyertechnologies.com>)

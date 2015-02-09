@@ -2,6 +2,11 @@
 
 This file is used to list changes made in each version of appveyor.
 
+## 0.4.0
+
+* Licence of cookbook change to MIT, and opensourced
+* Foodcritic fixes
+
 ## 0.3.0
 
 * Added ability to set deployment group
