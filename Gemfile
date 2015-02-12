@@ -15,3 +15,4 @@ gem 'berkshelf'
 # end
 
 gem 'thor-foodcritic'
+gem 'stove'
